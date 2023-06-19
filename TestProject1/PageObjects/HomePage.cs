@@ -18,7 +18,9 @@ namespace TestProject1.PageObjects
         [FindsBy(How = How.Name, Using = "btnK")]
         private readonly IWebElement _searchbtn;
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public HomePage(IWebDriver driver)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             _driver = driver;
             PageFactory.InitElements(driver, this);
