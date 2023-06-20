@@ -33,7 +33,7 @@ namespace TestProject1
             Assert.That(_driver.Title, Does.Contain("BrowserStack"));
         }
         [Test]
-        public void Test()
+        public void OpenSourceLoginPage()
         {
             //IWebDriver driver = new FirefoxDriver();
             LoginPage loginPage = new(_driver);
