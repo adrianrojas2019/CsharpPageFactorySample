@@ -10,16 +10,16 @@ namespace TestProject1.PageObjects
 {
     internal class LoginPage
     {
-        private IWebDriver _driver;
+        private readonly IWebDriver _driver;
 
         [FindsBy(How = How.Name, Using = "username")]
-        public IWebElement UserName { get; set; }
+        public IWebElement? UserName { get; set; }
 
         [FindsBy(How = How.Name, Using = "password")]
-        public IWebElement Password { get; set; }
+        public IWebElement? Password { get; set; }
 
         [FindsBy(How = How.TagName, Using = "button")]
-        public IWebElement Submit { get; set; }
+        public IWebElement? Submit { get; set; }
         public LoginPage(IWebDriver driver)
         {
             _driver = driver;
